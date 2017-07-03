@@ -11,6 +11,7 @@ Features:
 - Client specific subdomains (with separate credentials)
 - CSS Framework for fluid layouts (via crush)
 - Dynamic content referencing
+- Automatic video encoding via server-side ffmpeg
 - Optimization for loading speeds, automatic downscaling and dynamic loading of images
 - No external sources
 - Fully scalable

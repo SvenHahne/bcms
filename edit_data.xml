@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<data>
+  <saveintrv>5</saveintrv>
+  <nrbackups>10</nrbackups>
+  <editcount>5</editcount>
+  <backupnr>1</backupnr>
+  <backups><bentry nr="0" path=".backup/backup.0">2017-06-09T16:50:19+02:00</bentry></backups>
+</data>

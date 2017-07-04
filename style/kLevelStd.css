@@ -1,0 +1,163 @@
+div.lvlMenBase { width:100%; }
+a.lvlMen { width:100%; text-decoration:none; }
+a.lvlMen:hover { text-decoration:none; }
+div.kls_nopic
+{
+	color:black;
+	background-color:white;
+	opacity:0.8;
+	font-family: "Midiet_Sans_Italic_Light", Arial, sans-serif;
+}
+div.kls_nopic:hover { opacity:1.0; background-color:white; }
+
+/* ------- smallpic -------*/
+
+div.smShiftTable
+{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+	height:96%;
+}
+
+div.smShiftCell
+{
+	display:table-cell;
+	width:100%;
+	height:100%;
+	vertical-align:bottom;
+}
+
+a.smallpicLink { text-decoration:none; }
+
+div.smHover 
+{
+	opacity:0.8;
+	-webkit-box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.6);
+	box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.6);
+}
+
+div.smHover:hover { opacity:1.0; }
+div.kls_smallpic { width:100%; height:80px; }
+div.smallpic_text
+{
+	color:black;
+	background-color:white;
+	font-family: "Midiet_Sans_Italic_Light", Arial, sans-serif;
+}
+
+/* ------- bigpic -------*/
+
+div.bigpic_cell { padding:2%; }
+div.bg_img_brd { width:100%; height:220px; overflow:hidden; -webkit-filter: grayscale(1.0) sepia(0.2); }
+div.bg_img_brd:hover { -webkit-filter: grayscale(0.6) sepia(0.4); }
+div.bg_subtext 
+{
+	padding:1%;
+	margin-bottom:4%;
+	height:40%;
+	display:block;
+	background-color:white;
+	font-family: "Midiet_Sans_Medium", Arial, sans-serif;
+	color:black;
+	text-shadow: 1px 1px 1px #AAA;
+	filter: dropshadow(color=#000000, offx=1, offy=1);	
+}
+
+
+/* retina displays */
+@media screen and (min-width:1500px) 
+{
+	div.kls_nopic { padding:15px; margin-right:15px; margin-bottom:15px; font-size:0.8em; }
+	div.lvlMenRow { padding:0px; }
+	
+	/* ------- smallpic -------*/
+
+	div.smallpic_text { font-size:1.4em; line-height:1.2em; padding:10px; }
+	div.smHover { margin-top:20px; }
+	div.smallpic_cell { padding:10px; }
+	div.kls_smallpic { width:100%; height:80px;	}
+
+	/* ------- bigpic -------*/
+
+	div.bg_subtext { font-size:1.3em; line-height:1.4em; }
+	div.bg_img_brd { height:260px; }
+}
+
+/* standard browser */
+@media screen and (max-width:1500px) and (min-width:1024px)
+{
+	div.kls_nopic { padding:10px; margin-bottom:15px; font-size:1.3em; }
+	div.lvlMenRow { padding:8px; }
+	
+	/* ------- smallpic -------*/
+
+	div.smallpic_text { font-size:1.2em; line-height:1.2em; padding:8px; }
+	div.smHover { margin-top:20px; }
+	div.smallpic_cell { padding:10px; }
+	div.kls_smallpic { width:100%; height:70px; }
+	
+	/* ------- bigpic -------*/
+
+	div.bg_subtext { font-size:0.9em; line-height:0.9em; }
+	div.bg_img_brd { height:220px; }
+}
+
+/* ipad */
+@media screen and (max-width: 1024px) and (min-width:768px) 
+{
+	div.kls_nopic { padding:8px; margin-bottom:12px; font-size:1.3em; }
+	div.lvlMenRow { padding:6px; }
+	
+	/* ------- smallpic -------*/
+
+	div.smallpic_text { font-size:1.0em; padding:5px; }
+	div.smHover { margin-top:20px; }
+	div.smallpic_cell { padding:10px; }
+	div.kls_smallpic { width:100%; height:50px; }
+	
+	/* ------- bigpic -------*/
+
+	div.bg_subtext { font-size:0.9em; line-height:0.9em; }
+	div.bg_img_brd { height:180px; }
+}
+
+/* iphone */
+@media screen and (max-width: 768px) and (min-width:450px) 
+{
+	div.kls_nopic { padding:5px; margin-bottom:10px; font-size:1.25em; }
+	div.lvlMenRow { padding:5px; }
+	
+	/* ------- smallpic -------*/
+
+	div.smallpic_text { font-size:1.0em; padding:5px; }
+	div.smHover { margin-top:20px; }
+	div.smallpic_cell { padding:10px; }
+	div.kls_smallpic { width:100%; height:50px; }
+	
+	/* ------- bigpic -------*/
+
+	div.bg_subtext { font-size:0.8em; line-height:0.8em; padding:2%; margin-bottom:6%; }
+	div.bg_img_brd { height:150px; }
+}
+
+
+/* mobile */
+@media screen and (max-width:450px)
+{	
+	div.kls_nopic { padding:5px; margin-bottom:8px; font-size:1.0em; }
+	div.lvlMenRow { padding:4px; }
+	
+	/* ------- smallpic -------*/
+
+	div.smallpic_text { font-size:0.8em; line-height:0.8em; padding:5px; }
+	div.smHover { margin-top:7px; }
+	div.smallpic_cell { padding:7px; }
+	div.kls_smallpic  { width:100%; height:30px; }
+	
+	/* ------- bigpic -------*/
+
+	div.bg_subtext { font-size:0.8em; line-height:0.8em; padding:1.5%; margin-bottom:3.5%; }
+	div.bg_img_brd { height:90px; }
+}

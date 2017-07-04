@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <atom:link href="http://www.testside.cl/rss-feeds" rel="self" type="application/rss+xml"/>
+    <title>Newsletter</title>
+    <description/>
+    <link>http://www.testsite.cl</link>
+    <language>es-cl</language>
+    <copyright>the company</copyright>
+    <pubDate>Tue, 20 May 2014 16:26:55 +0200</pubDate>
+    <image>
+      <url>rss-feeds/pic/logo.png</url>
+      <title>Newsletter</title>
+      <link>http://www.testsite.cl</link>
+    </image>
+  </channel>
+</rss>

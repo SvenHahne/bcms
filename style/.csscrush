@@ -1,0 +1,30 @@
+{
+    "crush_style.crush.css": {
+        "imports": [],
+        "datem_sum": 1499126442,
+        "options": {
+            "formatter": "single-line",
+            "boilerplate": false,
+            "minify": true,
+            "versioning": true,
+            "vars": [],
+            "cache": true,
+            "context": null,
+            "output_file": null,
+            "output_dir": null,
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": [
+                "loop",
+                "ie-inline-block",
+                "ie-opacity"
+            ],
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    }
+}

@@ -1,0 +1,91 @@
+<?php
+    
+    // wrapper klasse für jquery Isotope
+    class Isotope
+    {
+        protected $pvSize = 0;
+        protected $phSize = 0;
+        protected $vertLines = FALSE;
+        protected $vertLinesColor = "#000";
+        protected $scaleFact = array(1.0, 1.0, 1.0, 0.9, 0.8, 0.6);
+        
+        function __construct()
+        {}
+        
+        function loadJs()
+        {
+            return '<script type="text/javascript" src="'.$GLOBALS['root'].'js/isotope.pkgd.min.js"></script>';
+            return '<script type="text/javascript" src="'.$GLOBALS['root'].'js/packery-mode.pkgd.min.js"></script>';
+        }
+        
+        function jInit(&$dPar)
+        {
+            $outStr = "";
+            
+            if ( !$GLOBALS["isotopeJInitSet"] )
+            {
+                $GLOBALS["isotopeJInitSet"] = TRUE;
+                
+                $outStr .= '
+                $("#mason-cont").isotope({
+                                         layoutMode: "masonry",
+                                         masonry: {
+                                            columnWidth: ".g-sizer",
+                                            itemSelector: ".item",
+                                            gutter: ".g-gutter"
+                                         }
+                                         });
+                $("#mason-cont").isotope("on", "layoutComplete", function(msnryInstance, laidOutItems) {';
+                                         
+                if ($this->vertLines == TRUE)
+                {
+                    $outStr .= '
+                        for (var i=0;i<laidOutItems.length;i++) {
+                            if (laidOutItems[i].element.style.left != "0px") {
+                                laidOutItems[i].element.style.borderLeft = "solid 1px '.$this->vertLinesColor.'";
+                            } else {
+                                laidOutItems[i].element.style.borderLeft = "0px";
+                            }
+                        }';
+                }
+                                    
+                $outStr .= '
+                });
+                //$("#mason-cont").isotope(); // do it!
+                ';
+            }
+            
+            return $outStr;
+        }
+        
+        // set padding, padding-left is not applied to the most left item
+        // padding-right is not applied to the most right item
+        // thereby the hole div stays aligned
+        function setPaddingVert($pvSize)
+        {
+            $this->pvSize = $pvSize;
+        }
+        
+        function setPaddingHori($phSize)
+        {
+            $this->phSize = $phSize;
+        }
+        
+        
+        // vertical lines separating the items.
+        // vertical lines don´t appear at the most left item lefts side
+        // and the most right items right side
+        function setVertLines($set, $col)
+        {
+            $this->vertLines = $set;
+            $this->vertLinesColor = $col;
+        }
+        
+        function getVPad($ind)
+        {
+            $sf = 1.0;
+            // if (sizeof($this->scaleFact) -1 >= $ind) $sf = $this->scaleFact[$ind];
+            return $this->pvSize * $sf;
+        }
+    }
+    ?>

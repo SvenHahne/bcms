@@ -1,0 +1,238 @@
+@import url("fonts.css");
+
+/* the slideshow container, strict 16:9 aspect ratio  */
+#slidshowContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 56.25% 0 0 0;
+    overflow: hidden;
+}
+
+#slidshowContainer_vert {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding: 140% 0 0 0;
+    overflow: hidden;
+}
+
+
+/* the ul */
+.slideshow_base {
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:auto;
+}
+
+#slideshow_vert {
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:auto;
+}
+
+.rslides_tabs {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    _float: left;
+    *float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.rslides_tabs a {
+    width: 14px;
+    height: 14px;
+    line-height: 20px;
+    display: inline-block;
+    _display: block;
+    *display: block;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: #ccc;
+    background: rgba(0,0,0, .2);
+}
+
+
+button.rslides_tabs_playb {
+    width: 14px;
+    height: 14px;
+    line-height: 20px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url("pic/play-button2.gif");
+    background-size:cover;
+    background-color:#009ee3;
+    text-indent:0px;
+}
+
+button.rslides_tabs_playb:hover {
+    background-color:#2b7886;
+}
+
+.rslides_tabs li:first-child {
+  margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    background: #009ee3;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer {
+  font-size: 11px;
+}
+
+.events {
+  list-style: none;
+}
+
+.rslides_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 52%;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url("style/responsiveslides/themes.gif") no-repeat left top;
+    margin-top: -45px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.rslides_nav:focus
+{
+    outline: none;
+}
+
+.rslides_nav:active {
+    opacity: 1.0;
+}
+
+.rslides_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}
+
+.rslides_here a
+{
+    background: #222;
+    background: rgba(0,0,0, .8);
+}
+
+hr.rslidesHr {
+    background-color:white;
+}
+
+.rslidesOSubText {
+    padding-left:5%;
+}
+
+.rslidesOContainer {
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:0;
+    z-index:100;
+    transition: opacity 0.5s;
+}
+
+.rslidesOContainer:hover {
+    opacity:1;
+}
+
+.rslidesOText {
+    font-family: "KelsonSansRegular", Georgia, serif;
+    font-size:14pt;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color:white;
+    background:rgba(0,0,0, 0.6);
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding-top:8%;
+    height:100%;
+}
+
+
+#rs_contr {
+    margin-bottom:20px;
+}
+
+div.fancyb_slidshow { position: relative; width: 100%; height: 0; padding: 56.25% 0 0 0; overflow: hidden; }
+a.fancyb { position:absolute; top: auto; left:0px; bottom:0%; width:100%; }
+img.fancyb_slidshow_thmb { width:100%; height:auto; }
+div.fancyb_men_but_cont { width:100%; text-align:center; margin-bottom:15px; }
+div.fancyb_men_but { width:14px; height:14px; display:inline-block; margin-left:5px; margin-top:15px; }
+div.fancyb_men_but_gray { background-color:#989898; }
+div.fancyb_men_but_blue { background-color:#009ee3; }
+
+@media screen and (min-width:2000px)
+{
+    .rslidesOText { font-size:22pt; }
+}
+
+@media screen and (min-width:1500px) and (max-width:2000px)
+{
+    .rslidesOText { font-size:20pt; }
+}
+
+@media screen and (max-width:1500px) and (min-width:1000px)
+{
+    .rslidesOText { font-size:16pt; }
+}
+
+@media screen and (max-width: 999px) and (min-width:768px)
+{
+    .rslidesOText { font-size:15pt; }
+}
+
+@media screen and (max-width: 765px) and (min-width:450px)
+{
+    .rslidesOText { font-size:11pt; }
+}
+
+@media screen and (max-width:449px)
+{
+    .rslidesOContainer:hover {
+        opacity:0;
+    }
+    
+    .rslides_nav {
+        margin-left:0px;
+        margin-right:0px;
+    }
+
+    .rslidesOText {
+        font-size:10pt;
+    }
+    
+    .rslides_tabs {
+        margin-top:0px;
+    }
+    
+    .rslides_tabs a {
+        width: 8px;
+        height: 8px;
+        line-height: 8px;
+    }
+    
+    .rslides_tabs li {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}

@@ -1,0 +1,69 @@
+/* Root menu */
+
+
+/* Submenus */
+.dropdown-menu-skin ul {      
+	border: 1px solid #AAA; 
+    padding:0px;
+	margin-left: -9px;
+	margin-top: 8px;
+	background: #FCFCFC;
+    width:220px;
+}
+
+
+/* 3rd+ level menus */
+.dropdown-menu-skin ul ul { margin-left: 0; margin-top: -1px;}
+/* Root links */
+.dropdown-menu-skin a,
+.dropdown-menu-skin a:link,
+.dropdown-menu-skin a:visited { background:transparent;margin:0px;padding:0px;border:0px;text-decoration: none; }
+/* Root link hover */
+.dropdown-menu-skin a:hover,
+.dropdown-menu-skin li.dropdown-menu-hover > a { text-decoration: none; }
+/* Submenu links */
+.dropdown-menu-skin ul a,
+.dropdown-menu-skin ul a:link,
+.dropdown-menu-skin ul a:visited { font-weight:normal; }
+
+/* Submenu link hover */
+.dropdown-menu-skin ul a:hover,
+.dropdown-menu-skin ul li.dropdown-menu-hover > a {  }
+/* Root menu items */
+.dropdown-menu-skin li { padding:4px; background: transparent; margin:2px 4px 3px 4px;}
+/* Root menu item hover */
+.dropdown-menu-skin li:hover, .dropdown-menu-skin li.dropdown-menu-hover { background: transparent; color:#222; }
+/* Submenu items */
+.dropdown-menu-skin ul li {
+    margin: 2px 2px 2px 2px;
+	padding:4px;
+    background: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    filter: none;
+}
+
+/* Submenu item hover */
+.dropdown-menu-skin ul li:hover, .dropdown-menu-skin ul li.dropdown-menu-hover { 
+	background: #BBB; 
+	filter: none;
+}
+/* Submenu arrow indicator */
+.dropdown-menu-skin span.dropdown-menu-sub-indicator { background-image: url('images/arrows-000000.png'); }
+/* Optional submenu drop shadow */
+.dropdown-menu-skin .dropdown-menu-shadow {
+    -webkit-box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+    -ms-box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+    -o-box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+}

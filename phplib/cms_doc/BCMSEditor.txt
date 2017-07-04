@@ -1,0 +1,55 @@
+// BCMS written by Sven Hahne 3.02.2014
+
+
+BCMS is a straight forward and stupid CMS, aiming to provide at a highly intuitive and easy-to-use gui. It´s designed for having a webdesigner/programmer on the one side caring about stylesheets and layout of the site and a user on the other side which doesn´t have to have any significant knowledge about about all the technical details. It´s not aiming on endusers which want to have the biggest possible control over his site. 
+
+BCMS uses XML Databases, since in most cases of Visitcard or Band-Websites there´s not much security relevant data which has to be protected anyway. XML Database are much easier to handle, much faster and much less painfull to install - or put in another way it doesn´t need any further knowledge of the end user. 
+
+The Editor-Backend for the Management of the site is all done in the BCMSEditor Class, which calls all necessary sub classes and preprocesses the browse-visible html code.
+
+BCMS is programmed for most possible scalebility. Depending on the $nrLevels variable, the nesting of the XML Database is defined. 
+Furthermore the config.php file should be all you need to completely configure the structure of the Database. These levels will appear als <l0>, <l1> and so on. 
+BCMSEditor generates a form where the names of the specific entries beginn with the instruction, the php script show apply to the item, the names of the levels, the name of the key, the ids of the specific entry and the id of the subentry (e.g. single image of a slideshow) all speparated by the character "_".
+
+Folder setup:
+- all stylesheet have to be in the folder root/style
+- all javascript have to be in the folder root/js
+
+Dependencies;
+- jquery
+- jquery cleditor
+- jquery >1.8
+- jquery fancybox
+- jquery imgliquid
+- mysql >5.1
+- php >5.5
+- php gd lib
+- apache mod_rewrite (folder must be "AllowOverride ALL")
+
+Requirements:
+- apache module pagespeed
+- php opcache
+- php xcache
+- css crush
+
+Features:
+- Cross-Browser compatible
+- Designed for fluid layouts, mobile-first
+- Multiple User Database Content with url rewriting
+- Rss-Editor
+- Incremental Automatical Backup, depending on number of edit steps
+- Crossreferential Entries
+
+ 
+Database structure
+- all level up to the last but one should have a <name> tag with a tag for each language ("<de/>, <en/>") 
+
+Folder structure
+site / backup / dataFolder / user / level / content
+
+site: http://www.server.com/
+backup: .backup0 or nothing
+dataFolder: pic
+user: username or nothing (meaning standard public user)
+level: 0001/0002… depending on the level
+content: pic.jpg 

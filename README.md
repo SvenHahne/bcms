@@ -13,7 +13,6 @@ Features:
 - Dynamic content referencing
 - Automatic video encoding via server-side ffmpeg
 - Optimization for loading speeds, automatic downscaling and dynamic loading of images
+- keword search
 - No external sources
 - Fully scalable
-
-example site done with BCMS: http://www.instore.cl

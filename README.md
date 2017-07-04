@@ -1,7 +1,7 @@
 # bcms
 PHP based content management system
 
-BCMS is designed for web developers, that prefer to do most things in code but provide at the same time a simple Management interface to their clients.
+BCMS is designed for web developers, that prefer to do most things in code, providing a simple parametrisable management-interface to their clients at the same time.
 
 Features:
 - Automatic incremental backups of the sites contents

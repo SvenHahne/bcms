@@ -1,4 +1,4 @@
-// BCMS written by Sven Hahne 3.02.2014
+// BCMS written by Sven Hahne
 
 
 BCMS is a straight forward and stupid CMS, aiming to provide at a highly intuitive and easy-to-use gui. It´s designed for having a webdesigner/programmer on the one side caring about stylesheets and layout of the site and a user on the other side which doesn´t have to have any significant knowledge about about all the technical details. It´s not aiming on endusers which want to have the biggest possible control over his site. 
